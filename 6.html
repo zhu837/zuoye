@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"> 
+<title></title>
+<style> 
+div
+{
+	width:100px;
+	height:100px;
+	background:red;
+	position:fixed;
+	animation:myfirst 1s infinite;
+	-moz-animation:myfirst 1s infinite;
+	-webkit-animation:myfirst 1s infinite;
+	-o-animation:myfirst 1s infinite;
+}
+	
+div:hover{
+	width:100px;height:100px;
+}
+@keyframes myfirst
+{
+	0%   {background:red; left:0px; top:0px;}
+	25%  {background:yellow; left:200px; top:0px;}
+	50%  {background:green; left:200px; top:200px;}
+	75%  {background:purple; left:0px; top:200px;}
+	100% {background:red; left:0px; top:0px;}
+}
+</style>
+</head>
+<body>
+<div></div>
+</body>
+<html>
