@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>打印菱形</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			for (var i = 1;i<= 5;i++){
+				if(i==1){
+					for(var n = 1;n<=5-i;n++){
+						document.write("&nbsp;&nbsp;&nbsp;&nbsp;");
+					}
+					document.write("**"+"&nbsp;");
+				}else if(i<=5){
+					for(var n = 1;n<=5-i;n++){
+						document.write("&nbsp;&nbsp;&nbsp;&nbsp;");
+					}
+					for(var j =1;j<=i*2-1;j++){
+						document.write("**"+"&nbsp;");
+					}
+				}
+				document.write("<br />");
+				n++;
+			}
+			for (var i = 5-1;i>= 1;i--){
+				if(i==1){
+					for(var n = 1;n<=5-i;n++){
+						document.write("&nbsp;&nbsp;&nbsp;&nbsp;");
+					}
+					document.write("**"+"&nbsp;");
+				}else if(i<=5){
+					for(var n = 1;n<=5-i;n++){
+						document.write("&nbsp;&nbsp;&nbsp;&nbsp;");
+					}
+					for(var j =1;j<=i*2-1;j++){
+						document.write("**"+"&nbsp;");
+					}
+				}
+				document.write("<br />")
+			}
+
+		</script>
+	</body>
+</html>
